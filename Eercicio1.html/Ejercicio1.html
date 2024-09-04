@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alice Liddle</title>
+    <style>
+        body {
+            font-family: 'Papyrus', Arial, sans-serif;
+            color: white;
+            background-color: black;
+        }
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+        .left {
+            text-align: left;
+        }
+        .highlight {
+            background-color: #000000;
+            padding: 10px;
+            border: 1px solid #3d0000;
+        }
+        .author-info {
+        text-align: center; 
+        margin-top: 20px;
+        }
+        .author-info img {
+        display: block;    
+        margin: 0 auto;    
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+        button {
+        padding: 10px 20px;
+        background-color: #ffffff; /* Color de fondo inicial */
+        color: #000000; /* Color del texto */
+        border: 2px solid rgb(150, 18, 18); /* Color y grosor del borde */
+        border-radius: 10px; /* Radio del borde */
+        cursor: pointer;
+        font-family: 'Papyrus', Arial, sans-serif;
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+        position: relative;
+        overflow: hidden;
+        }
+
+        button:hover {
+        background-color: #e68282; 
+        transform: scale(1.1); 
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+        }
+
+        button::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300%;
+        height: 300%;
+        background-color: rgba(150, 18, 18, 0.2); 
+        border-radius: 50%;
+        transition: width 0.3s ease, height 0.3s ease; 
+        transform: translate(-50%, -50%); 
+        z-index: 0; 
+        }
+
+        button:hover::before {
+        width: 0;
+        height: 0; /* Expande el círculo al pasar el ratón */
+        }
+
+    </style>
+</head>
+<body>
+    <header class="center">
+        <h1>Alicia: Del pais de las Maravillas a la locura</h1>
+        <p>Descubre cómo el viaje de Alicia desde un mundo de fantasía hasta uno de horror refleja su evolución de niña curiosa a una figura en busca de liberación.</p>
+        <img src = "Alice Madness wonderland.png" alt="Alicia en el pais de las Maravillas by Lewis Carroll" width="300" height="200">
+    </header>
+
+    <nav class="left">
+        <h3>SECCIONES</h3>
+        <ul>
+            <li><a>Alicia en el País de las Maravillas (1865)</a></li>
+            <li><a>Alice: Madness returns</a></li>
+            <li><a>La Evolución de Alicia: De la Fantasía Encantadora al Horror Psicológico</a></li>
+        </ul>
+    </nav>
+    
+    
+    <main>
+        <section id="Alicia en el País de las Maravillas (1865)" class="highlight">
+            <h2>Alicia en el País de las Maravillas (1865)</h2> 
+            <p>ELa clásica obra de Lewis Carroll sigue a Alicia, una niña curiosa que cae en un mundo 
+                surrealista y absurdo tras seguir a un Conejo Blanco, en este reino:</p>
+                <ul> 
+                    <li><b>El País de las Maravillas </b>es un lugar excéntrico lleno de personajes extravagantes y situaciones ilógicas.</li>
+                    <li><b>Personajes como el Sombrerero Loco y el Gato de Cheshire </b>ofrecen consejos enigmáticos y desafíos absurdos.</li>
+                    <li><b>Temas de identidad y curiosidad</b>predominan mientras Alicia explora un mundo que desafía las reglas convencionales.
+                    </li>
+                </ul>
+                <div class="author-info">
+                    <img src="ty-thank-you.gif" alt="Alicia en el país de las Maravillas by Lewis Carroll" width="300" height="200">
+                    <p><b>Autor:</b> Lewis Carroll (Charles Lutwidge Dodgson)</p>
+                    <p><b>Publicación:</b> 1865</p>
+                    <p><b>Fecha de nacimiento:</b> 27 de enero de 1832</p>
+                    <p><b>Fecha de fallecimiento:</b> 14 de enero de 1898</p>
+                </div>
+            </section>
+
+        
+        <section id="Alice: Madness returns" class="left highlight">
+            <h2>Alice: Madness returns</h2>
+            <p>Alicia, ahora una joven adulta, regresa a un País de las Maravillas oscuro y distorsionado que refleja su trauma psicológico 
+                tras la trágica muerte de sus padres en un incendio, en esta versión del juego:
+                <ul> 
+                    <li><b>El País de las Maravillas </b>está en ruinas y deformado, mostrando una visión grotesca y perturbadora del mundo.</li>
+                    <li><b>Los personajes </b>están distorsionados, reflejando el estado mental de Alicia.</li>
+                    <li><b>Temas de trauma y recuperación</b>están presentes mientras Alicia enfrenta sus miedos y trata de restaurar el orden.
+                    </li>
+                </ul>
+                <div class="author-info">
+                <img src = "Alice Madness Returns.jpg" alt="Alicia en el pais de las Maravillas by Lewis Carroll" width="300" height="200">
+            </p>
+            <button><b><a href="https://store.steampowered.com/agecheck/app/19680/" class = "button">Alice: Madness returns</a></b></button>
+        </div>
+        </section>
+        
+
+        <section id="section3" class="center highlight">
+            <h2>La Evolución de Alicia: De la Fantasía al Horror Psicológico</h2>
+            <p>La historia de Alicia ha sido reinterpretada de formas significativas, reflejando diferentes aspectos de la experiencia humana. En "Alicia en el País de las Maravillas" (1865) de Lewis Carroll, 
+                Alicia explora un mundo surrealista y absurdo, donde la curiosidad 
+                y la imaginación infantil desafían las normas y la lógica. Esta versión celebra el asombro y la exploración sin restricciones.</p>
+                <p>En "Alice: Madness Returns" (2011) de Spicy Horse Games se ofrece una visión oscura del mismo universo. 
+                En esta reinterpretación, Alicia enfrenta un País de las Maravillas distorsionado por el trauma psicológico y la locura, 
+                explorando temas de dolor y redención en un entorno sombrío.
+                Ambas versiones destacan cómo una narrativa clásica puede evolucionar para explorar temas diversos: la curiosidad y la maravilla en la obra de Carroll, y el trauma y la recuperación
+                tras la muerte de los padres de Alice en el juego. Juntas, muestran la versatilidad de la historia de Alicia en la exploración de nuestras emociones y experiencias.
+                </p>
+            <img src = "download.jpg" alt="Alicia en el pais de las Maravillas by Lewis Carroll" width="300" height="200">
+            
+        </section>
+    </main>
+
+    <footer class="center">
+        <address>
+            <p>Autor: Elisa Ruiz</p>
+        </address>
+    </footer>
+</body>
+</html>
