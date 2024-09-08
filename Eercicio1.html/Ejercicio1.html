@@ -3,153 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alice Liddel</title>
+    <title>Introducción al HTML</title>
     <style>
         body {
-            font-family: 'Papyrus', Arial, sans-serif;
-            color: white;
-            background-color: black;
+            font-family: Arial, sans-serif;
+            color: black;
+            background-color: white;
+            text-align: center; 
         }
-        .center {
-            text-align: center;
+        header, nav, footer {
+            text-align: center; 
         }
-        .right {
-            text-align: right;
-        }
-        .left {
-            text-align: left;
+        nav {
+            text-align: left; 
         }
         .highlight {
-            background-color: #000000;
+            background-color: #f0f0f0;
             padding: 10px;
-            border: 1px solid #3d0000;
-        }
-        .author-info {
-        text-align: center; 
-        margin-top: 20px;
-        }
-        .author-info img {
-        display: block;    
-        margin: 0 auto;    
+            border: 1px solid #ddd;
+            text-align: left; 
+            margin: 0 auto; 
+            max-width: 800px; 
         }
         img {
             max-width: 100%;
             height: auto;
-            border-radius: 15px;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto; /* Centra la imagen */
         }
         button {
-        padding: 10px 20px;
-        background-color: #ffffff; /* Color de fondo inicial */
-        color: #000000; /* Color del texto */
-        border: 2px solid rgb(150, 18, 18); /* Color y grosor del borde */
-        border-radius: 10px; /* Radio del borde */
-        cursor: pointer;
-        font-family: 'Papyrus', Arial, sans-serif;
-        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
-        position: relative;
-        overflow: hidden;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #000;
+            border: 2px solid #999;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            display: inline-block; 
         }
-
         button:hover {
-        background-color: #e68282; 
-        transform: scale(1.1); 
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+            background-color: #ddd;
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-
-        button::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 300%;
-        height: 300%;
-        background-color: rgba(150, 18, 18, 0.2); 
-        border-radius: 50%;
-        transition: width 0.3s ease, height 0.3s ease; 
-        transform: translate(-50%, -50%); 
-        z-index: 0; 
+        button a {
+            text-decoration: none; 
+            color: inherit; 
         }
-
-        button:hover::before {
-        width: 0;
-        height: 0; /* Expande el círculo al pasar el ratón */
-        }
-
     </style>
 </head>
 <body>
-    <header class="center">
-        <h1>Alicia: Del pais de las Maravillas a la locura</h1>
-        <p>Descubre cómo el viaje de Alicia desde un mundo de fantasía hasta uno de horror refleja su evolución de niña curiosa a una figura en busca de liberación.</p>
-        <img src = "Alice Madness wonderland.png" alt="Alicia en el pais de las Maravillas by Lewis Carroll" width="300" height="200">
+    <header>
+        <h1>Introducción al HTML</h1>
+        <p>Explora los conceptos básicos del HTML y cómo este lenguaje de marcado se utiliza para estructurar páginas web.</p>
+        <img src="174854.png" width="300" height="200" alt="Logo de HTML">
     </header>
 
-    <nav class="left">
+    <nav>
         <h3>SECCIONES</h3>
-        <Ol>
-            <li><a href="#alicia-en-el-pais-de-las-maravillas">Alicia en el País de las Maravillas (1865)</a></li>
-            <li><a href="#alice-madness-returns">Alice: Madness Returns</a></li>
-            <li><a href="#evolucion-alicia">La Evolución de Alicia: De la Fantasía al Horror Psicológico</a></li>
-        </Ol>
+        <ol>
+            <li><a href="#seccion1">seccion1</a></li>
+            <li><a href="#seccion2">seccion2</a></li>
+            <li><a href="#seccion3">seccion3</a></li>
+        </ol>
     </nav>
     
-    
     <main>
-        <section id="alicia-en-el-pais-de-las-maravillas" class="highlight">
-            <h2>Alicia en el País de las Maravillas (1865)</h2> 
-            <p>ELa clásica obra de Lewis Carroll sigue a Alicia, una niña curiosa que cae en un mundo 
-                surrealista y absurdo tras seguir a un Conejo Blanco, en este reino:</p>
-                <ul> 
-                    <li><b>El País de las Maravillas </b>es un lugar excéntrico lleno de personajes extravagantes y situaciones ilógicas.</li>
-                    <li><b>Personajes como el Sombrerero Loco y el Gato de Cheshire </b>ofrecen consejos enigmáticos y desafíos absurdos.</li>
-                    <li><b>Temas de identidad y curiosidad</b>predominan mientras Alicia explora un mundo que desafía las reglas convencionales.
-                    </li>
-                </ul>
-                <div class="author-info">
-                    <img src="ty-thank-you.gif" alt="Alicia en el país de las Maravillas by Lewis Carroll" width="300" height="200">
-                    <p><b>Autor:</b> Lewis Carroll (Charles Lutwidge Dodgson)</p>
-                    <p><b>Publicación:</b> 1865</p>
-                    <p><b>Fecha de nacimiento:</b> 27 de enero de 1832</p>
-                    <p><b>Fecha de fallecimiento:</b> 14 de enero de 1898</p>
-                </div>
-            </section>
-
-        
-        <section id="alice-madness-returns" class="left highlight">
-            <h2>Alice: Madness returns</h2>
-            <p>Alicia, ahora una joven adulta, regresa a un País de las Maravillas oscuro y distorsionado que refleja su trauma psicológico 
-                tras la trágica muerte de sus padres en un incendio, en esta versión del juego:
-                <ul> 
-                    <li><b>El País de las Maravillas </b>está en ruinas y deformado, mostrando una visión grotesca y perturbadora del mundo.</li>
-                    <li><b>Los personajes </b>están distorsionados, reflejando el estado mental de Alicia.</li>
-                    <li><b>Temas de trauma y recuperación</b>están presentes mientras Alicia enfrenta sus miedos y trata de restaurar el orden.
-                    </li>
-                </ul>
-                <div class="author-info">
-                <img src = "Alice Madness Returns.jpg" alt="Alicia en el pais de las Maravillas by Lewis Carroll" width="300" height="200">
-            </p>
-            <button><b><a href="https://store.steampowered.com/agecheck/app/19680/" class = "button">Alice: Madness returns</a></b></button>
-        </div>
+        <section id="seccion1" class="highlight">
+            <h2>seccion1</h2>
+            <p>Este es un ejemplo de la etiqueta de párrafo. El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos.</p>
+            <ul>
+                <li><b>Lenguaje de marcado:</b> HTML utiliza etiquetas para definir la estructura de los documentos.</li>
+                <li><b>Elementos:</b> Los elementos HTML incluyen encabezados, párrafos, enlaces, imágenes y más.</li>
+                <li><b>Propósito:</b> Facilitar la presentación de contenido en navegadores web.</li>
+            </ul>
         </section>
-        
 
-        <section id="evolucion-alicia" class="center highlight">
-            <h2>La Evolución de Alicia: De la Fantasía al Horror Psicológico</h2>
-            <p>La historia de Alicia ha sido reinterpretada de formas significativas, reflejando diferentes aspectos de la experiencia humana. En "Alicia en el País de las Maravillas" (1865) de Lewis Carroll, 
-                Alicia explora un mundo surrealista y absurdo, donde la curiosidad 
-                y la imaginación infantil desafían las normas y la lógica. Esta versión celebra el asombro y la exploración sin restricciones.</p>
-                <p>En "Alice: Madness Returns" (2011) de Spicy Horse Games se ofrece una visión oscura del mismo universo. 
-                En esta reinterpretación, Alicia enfrenta un País de las Maravillas distorsionado por el trauma psicológico y la locura, 
-                explorando temas de dolor y redención en un entorno sombrío.
-                Ambas versiones destacan cómo una narrativa clásica puede evolucionar para explorar temas diversos: la curiosidad y la maravilla en la obra de Carroll, y el trauma y la recuperación
-                tras la muerte de los padres de Alice en el juego. Juntas, muestran la versatilidad de la historia de Alicia en la exploración de nuestras emociones y experiencias.
-                </p>
-            <img src = "download.jpg" alt="Alicia en el pais de las Maravillas by Lewis Carroll" width="300" height="200">
-            
+        <section id="seccion2" class="highlight">
+            <h2>seccion2</h2>
+            <p>Este es un ejemplo de la etiqueta de párrafo. El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos.</p>
+            <ul>
+                <li><b>&lt;html&gt;:</b> Elemento raíz del documento.</li>
+                <li><b>&lt;head&gt;:</b> Contiene metadatos, enlaces a estilos y scripts.</li>
+                <li><b>&lt;body&gt;:</b> Contiene el contenido visible de la página.</li>
+            </ul>
+            <img src="estructura-basica.jpg" alt="Estructura Básica de HTML" width="300" height="200">
+            <button><a href="https://www.youtube.com/watch?v=mNbnV3aN3KA">Aprende más sobre HTML</a></button>
+        </section>
+
+        <section id="seccion3" class="highlight">
+            <h2>seccion3</h2>
+            <p>Este es un ejemplo de la etiqueta de párrafo. El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos. Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos.</p>
+            <ul>
+                <li><b>&lt;p&gt;:</b> Define un párrafo.</li>
+                <li><b>&lt;a&gt;:</b> Define un enlace.</li>
+                <li><b>&lt;img&gt;:</b> Define una imagen.</li>
+                <li><b>Atributos:</b> Proporcionan información adicional sobre los elementos. Por ejemplo, <code>src</code> para imágenes y <code>href</code> para enlaces.</li>
+            </ul>
+            <img src="images.png" alt="Etiquetas HTML" width="300" height="200">
         </section>
     </main>
 
-    <footer class="center">
+    <footer>
         <address>
             <p>Autor: Elisa Ruiz</p>
         </address>
